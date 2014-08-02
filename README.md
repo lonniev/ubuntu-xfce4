@@ -1,22 +1,22 @@
-ubuntu-xcfe4 Cookbook
+ubuntu-xfce4 Cookbook
 =============
-Installs and starts up xcfe4, an X-windows desktop manager for Ubuntu
+Installs and starts up xfce4, an X-windows desktop manager for Ubuntu
 
 Attributes
 ----------
-* `default['ubuntu-xcfe4']['pkg']`
-    - The ubuntu-xcfe4 package. Defaults to `'xcfe4'`
+* `default['ubuntu-xfce4']['pkg']`
+    - The ubuntu-xfce4 package. Defaults to `'xfce4'`
 
 Usage
 -----
 
-Just include `ubuntu-xcfe4` in your node's `run_list`:
+Just include `ubuntu-xfce4` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[ubuntu-xcfe4]"
+    "recipe[ubuntu-xfce4]"
   ]
 }
 ```

@@ -1,14 +1,14 @@
 require 'chefspec'
 
-describe 'ubuntu-xcfe4::default' do
+describe 'ubuntu-xfce4::default' do
   
   let(:chef_run) do
     runner = ChefSpec::ChefRunner.new('platform' => 'ubuntu', 'version'=> '12.04')
-    runner.converge('ubuntu-xcfe4::default')
+    runner.converge('ubuntu-xfce4::default')
   end
     
-  it 'should include the ubuntu-desktop recipe by default' do
-    expect(chef_run).to include_recipe 'ubuntu-xcfe4::default'
+  it 'should include the ubuntu-xfce4 recipe by default' do
+    expect(chef_run).to include_recipe 'ubuntu-xfce4::default'
   end
 
 end

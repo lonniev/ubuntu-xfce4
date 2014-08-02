@@ -1,11 +1,11 @@
-ubuntu-unity CHANGELOG
+ubuntu-xfce4 CHANGELOG
 ==============
 
-This file is used to list changes made in each version of the ubuntu-unity cookbook.
+This file is used to list changes made in each version of the ubuntu-xfce4 cookbook.
 
 0.1.0
 -----
-- [Lonnie VanZandt] - Initial release of ubuntu-unity
+- [Lonnie VanZandt] - Initial release of ubuntu-xfce4
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

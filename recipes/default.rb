@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ubuntu-xcfe4
+# Cookbook Name:: ubuntu-xfce4
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt
@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-package node['ubuntu-xcfe4']['pkg'] do
+package node['ubuntu-xfce4']['pkg'] do
   :install
 end
