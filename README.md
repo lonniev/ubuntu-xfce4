@@ -1,22 +1,22 @@
-ubuntu-desktop Cookbook
+ubuntu-xcfe4 Cookbook
 =============
-Installs and starts up ubuntu-desktop, a desktop manager for Ubuntu
+Installs and starts up xcfe4, an X-windows desktop manager for Ubuntu
 
 Attributes
 ----------
-* `default['ubuntu-desktop']['pkg']`
-    - The ubuntu-desktop package. Defaults to `'ubuntu-desktop'`
+* `default['ubuntu-xcfe4']['pkg']`
+    - The ubuntu-xcfe4 package. Defaults to `'xcfe4'`
 
 Usage
 -----
 
-Just include `ubuntu-desktop` in your node's `run_list`:
+Just include `ubuntu-xcfe4` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[ubuntu-desktop]"
+    "recipe[ubuntu-xcfe4]"
   ]
 }
 ```

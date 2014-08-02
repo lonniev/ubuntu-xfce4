@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ubuntu-desktop
+# Cookbook Name:: ubuntu-xcfe4
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt lonniev@gmail.com
@@ -16,4 +16,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-default['ubuntu-desktop']['pkg'] = 'ubuntu-desktop'
+default['ubuntu-xcfe4']['pkg'] = 'xcfe4'
