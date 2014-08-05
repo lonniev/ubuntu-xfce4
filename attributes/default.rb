@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ubuntu-xfce4
+# Cookbook Name:: add-vagrantuser
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt lonniev@gmail.com
@@ -16,4 +16,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-default['ubuntu-xfce4']['pkg'] = 'xfce4'
