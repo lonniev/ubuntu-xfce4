@@ -1,14 +1,14 @@
 require 'chefspec'
 
-describe 'add-vagrantuser::default' do
+describe 'ubuntu-xfce4::default' do
   
   let(:chef_run) do
     runner = ChefSpec::ChefRunner.new('platform' => 'ubuntu', 'version'=> '12.04')
-    runner.converge('add-vagrantuser::default')
+    runner.converge('ubuntu-xfce4::default')
   end
     
-  it 'should include the add-vagrantuser recipe by default' do
-    expect(chef_run).to include_recipe 'add-vagrantuser::default'
+  it 'should include the ubuntu-xfce4 recipe by default' do
+    expect(chef_run).to include_recipe 'ubuntu-xfce4::default'
   end
 
 end

@@ -1,11 +1,11 @@
-add-vagrantuser CHANGELOG
+ubuntu-xfce4 CHANGELOG
 ==============
 
-This file is used to list changes made in each version of the add-vagrantuser cookbook.
+This file is used to list changes made in each version of the ubuntu-xfce4 cookbook.
 
 0.1.0
 -----
-- [Lonnie VanZandt] - Initial release of add-vagrantuser
+- [Lonnie VanZandt] - Initial release of ubuntu-xfce4
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

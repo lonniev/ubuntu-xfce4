@@ -1,16 +1,25 @@
-add-vagrantuser Cookbook
+ubuntu-xfce4 Cookbook
 =============
-Adds a Vagrant User for a Vagrant Box that lacks one (e.g. Softlayer boxes)
+Installs and starts up xfce4, an X-windows desktop manager for Ubuntu
 
 Attributes
 ----------
-* None Yet
-    - nothing to tune
+* `default['ubuntu-xfce4']['pkg']`
+    - The ubuntu-xfce4 package. Defaults to `'xfce4'`
 
 Usage
 -----
 
-Just include chef.add_recipe "add-vagrantuser" to your Vagrantfile.
+Just include `ubuntu-xfce4` in your node's `run_list`:
+
+```json
+{
+  "name":"my_node",
+  "run_list": [
+    "recipe[ubuntu-xfce4]"
+  ]
+}
+```
 
 Contributing
 ------------

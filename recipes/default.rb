@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: add-vagrantuser
+# Cookbook Name:: ubuntu-xfce4
 # Recipe:: default
 #
 # Copyright 2014, Lonnie VanZandt
@@ -17,19 +17,10 @@
 # limitations under the License.
 #
 
-user "vagrant" do
-    action :create
-    supports :manage_home => true
-    comment "Vagrant User"
-    password "$1$X7FxekSe$oMDholZuYrBQ3I6NlKIVZ/"
+package node['ubuntu-xfce4']['pkg'] do
+  :install
 end
 
-user "vagrant" do
-    action :modify
-    gid "sudo"
-end
-
-execute "grant vagrant sudo rights" do
-    command "echo %vagrant ALL=NOPASSWD:ALL > /etc/sudoers.d/vagrant"
-    command "chmod 0440 /etc/sudoers.d/vagrant"
+execute "set .xsession choice" do
+    command "echo xfce4-session > ~/.xsession"
 end
