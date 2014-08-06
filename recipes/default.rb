@@ -21,6 +21,9 @@ package node['ubuntu-xfce4']['pkg'] do
   :install
 end
 
-execute "set .xsession choice" do
-    command "echo xfce4-session > ~/.xsession"
+file "~/.xsession" do
+    mode 0644
+    content "xfce4-session"
+    
+    action :create_if_missing
 end
