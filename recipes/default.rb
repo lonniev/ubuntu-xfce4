@@ -20,3 +20,7 @@
 package node['ubuntu-xfce4']['pkg'] do
   :install
 end
+
+group "tsusers" do
+    action :create
+end
