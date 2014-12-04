@@ -21,6 +21,9 @@ package node['ubuntu-xfce4']['pkg'] do
   :install
 end
 
-group "tsusers" do
-    action :create
+# using the Chef users recipe and its manage LWRP,
+# create the tsusers group and any users who belong in that group
+# this requires data_bag/users/ files
+users_manage "tsusers" do
+  action :create
 end
